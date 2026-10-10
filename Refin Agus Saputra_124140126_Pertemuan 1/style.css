@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* padding & border masuk hitungan lebar */
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.header {
+    background: #1d4ed8;
+    color: #fff;
+    text-align: center;
+    padding: 24px 16px;
+}
+.header h1 { font-size: 1.8rem; }
+.header p { opacity: 0.9; font-size: 0.95rem; }
+
+.container {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.card h2 {
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+    color: #1d4ed8;
+}
+
+.card:nth-of-type(2) { grid-column: 1 / -1; }
+
+.form-group { margin-bottom: 14px; }
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+input:focus {
+    outline: none;
+    border-color: #1d4ed8;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+}
+input.invalid { border-color: #dc2626; }
+
+.error {
+    display: block;
+    color: #dc2626;
+    font-size: 0.82rem;
+    margin-top: 4px;
+    min-height: 1em;
+}
+.hint { color: #64748b; font-size: 0.82rem; }
+.hint.sukses { color: #16a34a; font-weight: 600; }
+
+.btn {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.btn:hover { opacity: 0.85; }
+.btn-primary { background: #1d4ed8; color: #fff; width: 100%; }
+.btn-danger { background: #dc2626; color: #fff; width: 100%; margin-top: 12px; }
+.btn-hapus {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+th { background: #f8fafc; font-size: 0.9rem; }
+.kosong { text-align: center; color: #94a3b8; padding: 24px; }
+td.angka, th.angka { text-align: right; }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e2e8f0;
+    margin-bottom: 8px;
+}
+.total-akhir { font-size: 1.2rem; color: #1d4ed8; }
+
+.status { margin-top: 8px; font-weight: 600; min-height: 1.4em; }
+.status.kurang { color: #dc2626; }
+.status.cukup { color: #16a34a; }
+
+.footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.85rem; }
+
+@media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+    .card:nth-of-type(2) { grid-column: auto; }
+}

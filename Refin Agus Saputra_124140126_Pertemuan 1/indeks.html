@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini POS - Kasir Kantin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1> Mini POS</h1>
+        <p>Kasir &amp; Keranjang Belanja Sederhana - Kantin / Toko Kampus</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Tambah Barang</h2>
+            <form id="formBarang" novalidate>
+
+                <div class="form-group">
+                    <label for="namaBarang">Nama Barang</label>
+                    <input type="text" id="namaBarang" placeholder="Contoh: Buku Tulis">
+                    <!-- Tempat pesan error nama (merah) -->
+                    <small class="error" id="errNama"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="hargaBarang">Harga Satuan (Rp)</label>
+                    <input type="number" id="hargaBarang" placeholder="Minimal 500">
+                    <small class="error" id="errHarga"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="qtyBarang">Jumlah / Qty</label>
+                    <input type="number" id="qtyBarang" placeholder="Minimal 1">
+                    <small class="error" id="errQty"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">+ Tambah ke Keranjang</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Keranjang Belanja</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Barang</th>
+                            <th>Harga Satuan</th>
+                            <th>Qty</th>
+                            <th>Subtotal</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <!-- Isi baris diisi oleh JavaScript -->
+                    <tbody id="isiKeranjang"></tbody>
+                </table>
+            </div>
+        </section>
+
+        
+        <section class="card">
+            <h2>Ringkasan &amp; Pembayaran</h2>
+
+            <div class="row">
+                <span>Total Belanja</span>
+                <strong id="totalBelanja">Rp 0</strong>
+            </div>
+
+            <div class="form-group">
+                <label for="kodePromo">Kode Promo (opsional)</label>
+                <input type="text" id="kodePromo" placeholder="Coba: HEMAT10">
+                <small id="infoPromo" class="hint">Diskon 10% otomatis jika total ≥ Rp 50.000</small>
+            </div>
+
+            <div class="row">
+                <span>Diskon</span>
+                <strong id="nominalDiskon">Rp 0</strong>
+            </div>
+
+            <div class="row total-akhir">
+                <span>Total Akhir</span>
+                <strong id="totalAkhir">Rp 0</strong>
+            </div>
+
+            <div class="form-group">
+                <label for="uangBayar">Uang Bayar (Rp)</label>
+                <input type="number" id="uangBayar" placeholder="Masukkan uang diterima">
+            </div>
+
+            <div class="row">
+                <span>Kembalian</span>
+                <strong id="kembalian">Rp 0</strong>
+            </div>
+            <p id="statusBayar" class="status"></p>
+
+            <button type="button" id="btnReset" class="btn btn-danger">Transaksi Baru / Reset</button>
+        </section>
+
+    </main>
+
+    <footer class="footer">Mini POS &copy; Tugas Praktikum Pemrograman Web</footer>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
