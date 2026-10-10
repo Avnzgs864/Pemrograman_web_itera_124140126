@@ -41,9 +41,12 @@ Simpan gambar di folder `screenshots/` lalu sesuaikan nama file.
 
 | Tampilan | Gambar |
 |---|---|
-| Form input utama | ![Form Input]() |
-| Validasi error muncul | ![Validasi Error](screenshots/2-validasi-error.png) |
-| Hasil kalkulator & tabel keranjang | ![Hasil Perhitungan](screenshots/3-hasil-perhitungan.png) |
+| Form input utama | ![Form Input](<img width="1920" height="1080" alt="Screenshot 2026-10-10 091511" src="https://github.com/user-attachments/assets/02f2d876-6873-4177-9341-f394041cd4b2" />
+) |
+| Validasi error muncul | ![Validasi Error](<img width="1920" height="1080" alt="Screenshot 2026-10-10 091454" src="https://github.com/user-attachments/assets/fc02029d-2ebf-4f66-ae17-ef1dbd581472" />
+) |
+| Hasil kalkulator & tabel keranjang | ![Hasil Perhitungan](<img width="1920" height="1080" alt="Screenshot 2026-10-10 091546" src="https://github.com/user-attachments/assets/a4559271-49cf-40f5-bdda-183838fc283f" />
+) |
 
 ## Penjelasan Teknis Singkat
 
