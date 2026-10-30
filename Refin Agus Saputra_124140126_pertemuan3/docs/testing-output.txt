@@ -1,0 +1,13 @@
+﻿
+> refin-124140126-pertemuan3@0.0.0 test:run
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/ASUS/OneDrive/πâëπé¡πâÑπâíπâ│πâê/Default Project/REFIN_124140126_pertemuan3
+
+
+ Test Files  6 passed (6)
+      Tests  23 passed (23)
+   Start at  10:42:24
+   Duration  3.75s (environment 69%, setup 17%, tests 10%, transform 2%, import 1%, worker 1%)
+
